@@ -1,0 +1,28 @@
+/* Brand colors */
+:root {
+    --primary-color: #0d1b2a;
+    --secondary-color: #1b263b;
+    --accent-color: #e0e1dd;
+    --font-main: 'Arial', sans-serif;
+}
+
+
+body {
+    font-family: var(--font-main);
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}

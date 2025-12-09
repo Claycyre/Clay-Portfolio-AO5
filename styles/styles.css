@@ -1,0 +1,78 @@
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+
+header .logo {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+
+body {
+    background-image: url('../images/spaceBackground.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+
+#hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin-top: 2rem;
+}
