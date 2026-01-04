@@ -1,3 +1,23 @@
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  z-index: 9999;
+}
+
+.custom-cursor img {
+  width: 150%;
+  height: 150%;
+  display: block;
+  transform: rotate(-25deg);
+}
+
 header {
   background-color: var(--secondary-color);
   padding: 1rem 2rem;
@@ -29,9 +49,20 @@ nav a {
   border-radius: 3px;
 }
 
-nav a:hover {
+nav a[data-category="celebrities"]:hover {
+  background-color: var(--celebrities-accent-color);
+}
+nav a[data-category="discoveries"]:hover {
+  background-color: var(--discoveries-accent-color);
+}
+nav a[data-category="political"]:hover {
+  background-color: var(--political-accent-color);
+}
+nav a[data-category="geological"]:hover {
+  background-color: var(--geological-accent-color);
+}
+nav a[data-category="all"]:hover {
   background-color: var(--accent-color);
-  color: var(--secondary-color);
 }
 
 body {
@@ -293,7 +324,6 @@ section article:nth-child(3) {
 
 /* CATEGORY TAGS */
 .category-tag {
-  position: absolute;
   top: 10px;
   left: 10px;
   z-index: 2;
@@ -306,27 +336,27 @@ section article:nth-child(3) {
 }
 
 .category-tag[data-category="discoveries"] {
-  background-color: #47a3ff;
+  background-color: var(--discoveries-accent-color);
 }
 
 .category-tag[data-category="celebrities"] {
-  background-color: #ff47d1;
+  background-color: var(--celebrities-accent-color);
 }
 
 .category-tag[data-category="political"] {
-  background-color: #ff7047;
+  background-color: var(--political-accent-color);
 }
 
 .category-tag[data-category="catastrophes"] {
-  background-color: #ff4747;
+  background-color: var(--catastrophes-accent-color);
 }
 
 .category-tag[data-category="geological"] {
-  background-color: #ffc447;
+  background-color: var(--geological-accent-color);
 }
 
 .category-tag[data-category="general"] {
-  background-color: #aa78ff;
+  background-color: var(--general-accent-color);
 }
 
 /* HERO SECTION */

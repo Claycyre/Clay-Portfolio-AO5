@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/brand.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/custom-cursor.js" defer></script>
     <script src="js/navigation.js" defer></script>
     <script src="js/footer.js" defer></script>
     <script src="js/featured-articles.js" defer></script>
@@ -12,15 +13,18 @@
     <title>Daily Space News – Top Stories in Space</title>
   </head>
 
+  <div class="custom-cursor">
+    <img src="images/rocketShipCursor.png" alt="cursor" />
+  </div>
+
   <body>
     <header>
       <a href="/" class="logo">Daily Space News</a>
       <nav>
-        <a href="#">Catastrophes</a>
         <a href="#" data-category="celebrities">Celebrities</a>
         <a href="#" data-category="discoveries">Discoveries</a>
         <a href="#" data-category="political">Political</a>
-        <a href="#">Geological</a>
+        <a href="#" data-category="geological">Geological</a>
         <a href="#" data-category="all">All</a>
       </nav>
     </header>
@@ -462,25 +466,76 @@
 
       <section id="articles">
         <h2>In other News</h2>
-        <article>
-          <h1>Article 1</h1>
-          <p>bit of info about the article</p>
-          <a href="#">Read More</a>
+        <article data-category="geological">
+          <span class="category-tag" data-category="geological"
+            >Geological</span
+          >
+          <img
+            src="images/body-images/crystal-cavern.png"
+            alt="Crystalline caverns"
+          />
+          <div class="featured-content">
+            <h3>Crystalline Caverns Discovered Beneath Mars’ Surface</h3>
+            <p class="excerpt">
+              Planetary geologists report vast crystal-lined chambers deep
+              beneath the Martian crust, suggesting long-term mineral growth
+              fueled by subsurface heat.
+            </p>
+            <p class="body">
+              Using high-resolution radar imaging and seismic data from
+              orbiters, researchers mapped the network of interconnected
+              caverns, some stretching several kilometers. These caverns contain
+              unique mineral formations, including rare crystalline structures
+              that could reveal Mars’ volcanic and hydrothermal history.
+              Scientists are now analyzing the potential for preserving water or
+              even microbial life in these protected underground pockets. The
+              discovery opens new possibilities for future Mars exploration and
+              habitability studies.
+            </p>
+            <p class="meta">By Dr. Lina Voss • Oct 14, 2109</p>
+            <div class="featured-tags">
+              <span>Mars</span>
+              <span>Crystals</span>
+              <span>Planetary Geology</span>
+            </div>
+            <a href="#">Read More</a>
+          </div>
         </article>
-        <article>
-          <h1>Article 2</h1>
-          <p>bit of info about the article</p>
-          <a href="#">Read More</a>
-        </article>
-        <article>
-          <h1>Article 3</h1>
-          <p>bit of info about the article</p>
-          <a href="#">Read More</a>
-        </article>
-        <article>
-          <h1>Article 4</h1>
-          <p>bit of info about the article</p>
-          <a href="#">Read More</a>
+
+        <article data-category="geological">
+          <span class="category-tag" data-category="geological"
+            >Geological</span
+          >
+          <img
+            src="images/body-images/super-volcanoes.png"
+            alt="super volcanoes"
+          />
+          <div class="featured-content">
+            <h3>Active Super-Volcanoes Suspected on Venus</h3>
+            <p class="excerpt">
+              New atmospheric data hints that Venus may still be geologically
+              active, with massive lava flows reshaping its surface today.
+            </p>
+            <p class="body">
+              Observations from orbiting spacecraft have detected unusual sulfur
+              dioxide concentrations and surface temperature anomalies near
+              several caldera regions. These findings suggest ongoing volcanic
+              activity that could periodically release gas into the dense
+              Venusian atmosphere. The potential activity of these
+              super-volcanoes challenges previous assumptions that Venus is
+              geologically dead and offers new insight into planetary evolution
+              and volcanism under extreme greenhouse conditions. Researchers
+              plan to prioritize these areas for future high-resolution imaging
+              and atmospheric monitoring missions.
+            </p>
+            <p class="meta">By Arjun Pantera • Oct 10, 2109</p>
+            <div class="featured-tags">
+              <span>Venus</span>
+              <span>Volcanoes</span>
+              <span>Planetary Science</span>
+            </div>
+            <a href="#">Read More</a>
+          </div>
         </article>
       </section>
     </main>
