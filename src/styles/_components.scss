@@ -1,0 +1,84 @@
+/* _components.scss */
+
+/* Article cards */
+section article {
+  background-color: rgba(0,0,0,0.35);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-med), box-shadow var(--transition-fast);
+}
+
+section article:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+section article img {
+  width: 100%;
+  border-radius: var(--card-radius);
+  margin-bottom: var(--space-sm);
+  object-fit: cover;
+  max-height: 200px;
+}
+
+/* Project / featured cards */
+.featured-wrapper {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s cubic-bezier(0.2,0.9,0.2,1);
+  will-change: transform;
+  align-items: stretch;
+}
+
+.featured-card {
+  flex: 0 0 calc((100% - 2rem)/3);
+  background: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 12px rgba(0,0,0,0.35);
+}
+
+/* Tags */
+.category-tag {
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #fff;
+}
+
+.category-tag[data-category="discoveries"] { background-color: var(--discoveries-accent-color); }
+.category-tag[data-category="celebrities"] { background-color: var(--celebrities-accent-color); }
+.category-tag[data-category="political"] { background-color: var(--political-accent-color); }
+.category-tag[data-category="geological"] { background-color: var(--geological-accent-color); }
+.category-tag[data-category="catastrophes"] { background-color: var(--catastrophes-accent-color); }
+.category-tag[data-category="general"] { background-color: var(--general-accent-color); }
+
+/* Hero text & CTA buttons */
+.hero-title { font-size: 2.3rem; line-height: 1.2; margin-bottom: 0.6rem; }
+.hero-meta { font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem; }
+.hero-excerpt { font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.2rem; font-weight: 500; }
+.hero-read-more {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.25s ease;
+}
+.hero-read-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+/* Skill groups */
+.skill-groups section {
+  margin-bottom: var(--space-md);
+}

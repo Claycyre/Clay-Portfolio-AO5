@@ -1,0 +1,55 @@
+/* _layout.scss */
+
+/* Header & nav */
+header {
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header .site-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Hero */
+#hero {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+  animation: heroGlow 6s infinite ease-in-out;
+}
+
+@keyframes heroGlow {
+  0% { box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+  50% { box-shadow: 0 0 25px rgba(255,255,255,0.25); }
+  100% { box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+}

@@ -1,0 +1,34 @@
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  section article img {
+    max-height: 150px;
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  z-index: 9999;
+}
+
+.custom-cursor img {
+  width: 150%;
+  height: 150%;
+  display: block;
+  transform: rotate(-25deg);
+}

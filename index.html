@@ -2,545 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/brand.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/custom-cursor.js" defer></script>
-    <script src="js/navigation.js" defer></script>
-    <script src="js/footer.js" defer></script>
-    <script src="js/featured-articles.js" defer></script>
-
-    <title>Daily Space News – Top Stories in Space</title>
+    <title>Clayton Cyre</title>
   </head>
 
-  <div class="custom-cursor">
-    <img src="images/rocketShipCursor.png" alt="cursor" />
-  </div>
-
   <body>
+    <!-- HEADER / NAV -->
     <header>
-      <a href="/" class="logo">Daily Space News</a>
-      <nav>
-        <a href="#" data-category="celebrities">Celebrities</a>
-        <a href="#" data-category="discoveries">Discoveries</a>
-        <a href="#" data-category="political">Political</a>
-        <a href="#" data-category="geological">Geological</a>
-        <a href="#" data-category="all">All</a>
+      <nav aria-label="Primary">
+        <a href="#hero" class="site-logo">Clayton Cyre</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
+
     <main>
-      <section id="hero">
-        <article class="hero-article" data-category="political">
-          <span class="hero-category-tag" data-category="political"
-            >Political</span
-          >
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-article">
+        <div class="hero-body">
+          <h1 class="hero-title">Clayton Cyre</h1>
+          <p class="hero-meta">Fullstack Developer focused on accessible, performant web experiences</p>
+          <p class="hero-excerpt">
+            I enjoy turning complex problems into clean, intuitive interfaces and building accessible, modern web apps.
+          </p>
 
-          <div class="hero-image">
-            <img
-              src="images/featured/government.jpg"
-              alt="Hero Article Image"
-            />
+          <div class="hero-cta">
+            <a href="#projects" class="hero-read-more">View Projects</a>
+            <a href="#contact" class="hero-read-more">Get in Touch</a>
           </div>
-
-          <div class="hero-content">
-            <h1 class="hero-title">
-              Galactic Government Declares Emergency Summit After Mars–Neptune
-              Resource Treaty Breakdown
-            </h1>
-
-            <p class="hero-meta">
-              By <strong>Astra Velorum</strong> • Feb 1, 2108
-            </p>
-
-            <p class="hero-excerpt">
-              Tensions in the inner solar system reached a critical point this
-              morning as the long-standing Mars–Neptune Resource Treaty
-              officially collapsed. The Galactic Government announced an
-              emergency summit to prevent what experts fear could become the
-              first ever interplanetary political crisis for the galaxy. Early
-              reports suggest that disputes over helium-3 mining rights in the
-              asteroid belt triggered the sudden dissolution of the agreement,
-              leaving both colonies scrambling for diplomatic footing…
-            </p>
-
-            <div class="hero-body">
-              <p>
-                According to Council representatives, the talks will focus on
-                stabilizing trade routes through the Neptunian system and
-                renegotiating energy distribution protocols that have governed
-                interplanetary cooperation since 2100. Political analysts warn
-                that if no resolution is reached, the split could threaten fuel
-                supplies, disrupt quantum communication corridors, and
-                destabilize smaller colonies that depend on Neptunian resources.
-              </p>
-              <p>
-                Meanwhile, Mars officials publicly accused Neptune’s orbital
-                coalition of violating Uranus's shared mining borders, a claim
-                the Neptunian diplomats strongly deny. The government's
-                emergency session—set to begin within the next 48 hours—may
-                determine the direction of solar-system governance for decades
-                to come.
-              </p>
-            </div>
-
-            <div class="hero-tags">
-              <span>Interplanetary Diplomacy</span>
-              <span>Helium-3 Crisis</span>
-              <span>Galactic Council</span>
-              <span>Mars-Neptune Treaty</span>
-            </div>
-
-            <a href="#" class="hero-read-more">Continue Reading</a>
-          </div>
-        </article>
+        </div>
       </section>
 
-      <section id="featured-articles">
-        <h2>Featured Articles</h2>
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Clayton Cyre is a frontend developer with a strong interest in UI architecture, accessibility, and component-based design.
+        </p>
+        <p>
+          My background includes collaborative team projects and solo builds using modern tooling such as Tailwind, Sass, and JavaScript frameworks.
+        </p>
+      </section>
 
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-groups">
+          <section>
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS / Sass</li>
+              <li>Tailwind CSS</li>
+              <li>JavaScript (ES6+)</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MVC</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Tooling</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Vite</li>
+              <li>npm</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Design & UX</h3>
+            <ul>
+              <li>Responsive Design</li>
+              <li>Accessibility (WCAG)</li>
+              <li>Component Design</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="featured-viewport">
+        <h2>Projects</h2>
         <div class="featured-wrapper">
-          <!-- ARTICLE 1 -->
-          <article class="featured-card" data-category="discoveries">
-            <span class="category-tag" data-category="discoveries"
-              >Discoveries</span
-            >
-            <img src="images/featured/ancient-galaxy.jpg" alt="Galaxy Image" />
+          <article class="featured-card">
+            <img src="images/body-images/space-image1.jpg" alt="Project Screenshot">
             <div class="featured-content">
-              <h3>Ancient Galaxy Found at Edge of Observable Universe</h3>
-              <p class="excerpt">
-                Astronomers have detected one of the oldest known galaxies...
+              <h3>Deckmaster</h3>
+              <p>With the Deckmaster project, I build a web application that leverages the benefits of MVC
+                and Razor view engines to create a dynamic and user-friendly platform for managing and showcasing card decks.
               </p>
-              <p class="meta">By Jane Carter • Jan 5, 2108</p>
-
               <div class="featured-tags">
-                <span>Galaxy Discovery</span>
-                <span>Early Universe</span>
-                <span>Astronomy Research</span>
+                <span data-category="discoveries" class="category-tag">Discoveries</span>
               </div>
-              <a href="#">Read More</a>
-            </div>
-          </article>
-          <!-- ARTICLE 2 -->
-          <article class="featured-card" data-category="celebrities">
-            <span class="category-tag" data-category="celebrities"
-              >Celebrities</span
-            >
-            <img src="images/featured/starshower.jpg" alt="Starshower Image" />
-            <div class="featured-content">
-              <h3>
-                Celebs Get Ready for Annual Diamond Starshower Awards on Venus
-              </h3>
-              <p class="excerpt">
-                The glamorous event returns to Venus with a dazzling display
-                under the planet's rare diamond showers...
-              </p>
-              <p class="meta">By Mark Benson • Jan 7, 2108</p>
-              <div class="featured-tags">
-                <span>Venus Event</span>
-                <span>Diamond Starshower</span>
-                <span>Celebrity Awards</span>
+              <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
               </div>
-              <a href="#">Read More</a>
-            </div>
-          </article>
-          <!-- ARTICLE 3 -->
-          <article class="featured-card" data-category="celebrities">
-            <span class="category-tag" data-category="celebrities"
-              >Celebrities</span
-            >
-            <img src="images/featured/film.jpg" alt="Film Image" />
-            <div class="featured-content">
-              <h3>Filming Begins on Saturn for LOTR Space Remake</h3>
-              <p class="excerpt">
-                The epic fantasy saga is being reimagined with stunning
-                extraterrestrial visuals with Saturn's rings as the focus...
-              </p>
-              <p class="meta">By Lila Morgan • Jan 10, 2108</p>
-              <div class="featured-tags">
-                <span>Space Filming</span>
-                <span>LOTR Remake</span>
-                <span>Saturn's Rings</span>
-              </div>
-              <a href="#">Read More</a>
-            </div>
-          </article>
-          <!-- ARTICLE 4 -->
-          <article class="featured-card" data-category="discoveries">
-            <span class="category-tag" data-category="discoveries"
-              >Discoveries</span
-            >
-            <img src="images/featured/black-hole.jpg" alt="Black Hole Image" />
-            <div class="featured-content">
-              <h3>New Black Hole Image Reveals Twisting Magnetic Fields</h3>
-              <p class="excerpt">
-                Researchers capture unprecedented details around a supermassive
-                black hole that suddenly appeared near the edge of the Milky
-                Way...
-              </p>
-              <p class="meta">By Adrian Cole • Jan 12, 2108</p>
-              <div class="featured-tags">
-                <span>Black Hole</span>
-                <span>Magnetic Fields</span>
-                <span>Space Research</span>
-              </div>
-              <a href="#">Read More</a>
             </div>
           </article>
 
-          <!-- ARTICLE 5 -->
-          <article class="featured-card" data-category="discoveries">
-            <span class="category-tag" data-category="discoveries"
-              >Discoveries</span
-            >
-            <img src="images/featured/exoplanet.jpg" alt="Exoplanet Image" />
+          <article class="featured-card">
+            <img src="images/body-images/space-image2.jpg" alt="Project Screenshot">
             <div class="featured-content">
-              <h3>Potentially Habitable Exoplanet Found 40 LY Away</h3>
-              <p class="excerpt">
-                AI projects newly discovered world may have conditions suitable
-                for life outside of Milky Way...
+              <h3>Javascript Game</h3>
+              <p>Another project tasked us with creating an interactive game using JavaScript and HTML5. 
+                I decided to create a Where's Waldo-inspired game where players search for hidden characters within a busy scene.
               </p>
-              <p class="meta">By Sarah Kim • Jan 15, 2108</p>
               <div class="featured-tags">
-                <span>Exoplanet</span>
-                <span>Habitable Worlds</span>
-                <span>Astrobiology</span>
+                <span data-category="political" class="category-tag">Games</span>
               </div>
-              <a href="#">Read More</a>
+              <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+              </div>
             </div>
           </article>
-
-          <!-- ARTICLE 6 -->
-          <article class="featured-card" data-category="political">
-            <span class="category-tag" data-category="political"
-              >Political</span
-            >
-            <img src="images/featured/satellite.jpg" alt="Satellite in Orbit" />
-            <div class="featured-content">
-              <h3>Alien-Provided Quantum Satellite Changes Diplomacy</h3>
-              <p class="excerpt">
-                A breakthrough in alien quantum tech could reshape government
-                security for the rest of space...
-              </p>
-              <p class="meta">By Daniel Price • Jan 18, 2108</p>
-              <div class="featured-tags">
-                <span>Quantum Satellite</span>
-                <span>Interplanetary Diplomacy</span>
-                <span>Alien Tech</span>
-              </div>
-              <a href="#">Read More</a>
-            </div>
-          </article>
-        </div>
-        <div class="featured-controls">
-          <button id="prev-article">◀</button>
-          <button id="next-article">▶</button>
+          <!-- Add more featured-card articles as needed -->
         </div>
       </section>
 
-      <!-- Clays section start -->
-      <section id="my-section" class="newspaper-section">
-        <h2 class="section-header">Latest Deep Space Highlights</h2>
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <h2>Experience & Education</h2>
+        <ol class="timeline">
+          <li>
+            <h3>Frontend Developer – Team Project</h3>
+            <p class="meta">2024 – Present</p>
+            <p>Collaborated in a team environment to design and build a responsive, component-driven web application.</p>
+          </li>
 
-        <article class="newspaper-article">
-          <img
-            src="images/body-images/space-image1.jpg"
-            alt="Space image 1"
-            class="article-img"
-          />
-          <h1 class="article-title">Galactic Phenomenon Stuns Astronomers</h1>
-
-          <div class="newspaper-columns">
-            <p>
-              A mysterious light pattern has been observed beyond the outer rim
-              of our solar system. While scientists anticipate the
-              ramifications, Earthlings have begun to panic.
-            </p>
-          </div>
-
-          <aside class="meta-box">
-            <p><strong>Author:</strong> Jordan Matthews</p>
-            <p><strong>Category:</strong> Geological</p>
-            <p><strong>Published:</strong> February 6, 2024</p>
-            <p>
-              <strong>Excerpt:</strong> The city council voted overwhelmingly in
-              favor of a new transportation initiative designed to reduce
-              emissions and improve commuter options.
-            </p>
-            <p>
-              <strong>Tags:</strong> sustainability, transportation, emissions,
-              local government
-            </p>
-          </aside>
-
-          <a href="#" class="read-more">Read More →</a>
-          <hr class="article-divider" />
-        </article>
-
-        <article class="newspaper-article">
-          <span class="category-tag" data-category="discoveries"
-            >Discoveries</span
-          >
-          <img
-            src="images/body-images/space-image2.jpg"
-            alt="Space image 2"
-            class="article-img"
-          />
-          <h1 class="article-title">
-            New Exoplanet Shows Signs of Extreme Weather
-          </h1>
-
-          <div class="newspaper-columns">
-            <p>
-              Dubbed the future hope of our civilization, data reveals that
-              violent storms shaped Keplar 66Q's atmosphere daily.
-            </p>
-          </div>
-
-          <aside class="meta-box">
-            <p><strong>Author:</strong> Mia Chen</p>
-            <p><strong>Category:</strong> Discoveries</p>
-            <p><strong>Published:</strong> October 21, 2025</p>
-            <p>
-              <strong>Excerpt:</strong> A new AI tool promises to enhance the
-              speed and accuracy of emergency response teams nationwide.
-            </p>
-            <p>
-              <strong>Tags:</strong> AI, emergency services, innovation,
-              startups
-            </p>
-          </aside>
-
-          <a href="#" class="read-more">Read More →</a>
-          <hr class="article-divider" />
-        </article>
-
-        <article class="newspaper-article">
-          <span class="category-tag" data-category="political">Political</span>
-          <img
-            src="images/body-images/space-image3.jpg"
-            alt="Space image 3"
-            class="article-img"
-          />
-          <h1 class="article-title">Unusual Object Detected Near Jupiter</h1>
-
-          <div class="newspaper-columns">
-            <p>
-              Scientists are investigating its strange hollow structure after a
-              drone was deployed for a closer look.
-            </p>
-          </div>
-
-          <aside class="meta-box">
-            <p><strong>Author:</strong> Samuel Reyes</p>
-            <p><strong>Category:</strong> Political</p>
-            <p><strong>Published:</strong> July 12, 2024</p>
-            <p>
-              <strong>Excerpt:</strong> The district announced a universal
-              breakfast initiative aimed at improving student health and
-              academic performance.
-            </p>
-            <p>
-              <strong>Tags:</strong> schools, health, nutrition, community
-              programs
-            </p>
-          </aside>
-
-          <a href="#" class="read-more">Read More →</a>
-          <hr class="article-divider" />
-        </article>
-
-        <article class="newspaper-article">
-          <span class="category-tag" data-category="celebrities"
-            >Celebrities</span
-          >
-          <img
-            src="images/body-images/space-image4.jpg"
-            alt="Space image 4"
-            class="article-img"
-          />
-          <h1 class="article-title">
-            Satellite Captures Rare Cosmic Alignment
-          </h1>
-
-          <div class="newspaper-columns">
-            <p>
-              An unplanned but stunning photograph of five celestial bodies has
-              been captured by an independent photographer who also happens to
-              be a personal satellite enthusiast.
-            </p>
-          </div>
-
-          <aside class="meta-box">
-            <p><strong>Author:</strong> Aisha Patel</p>
-            <p><strong>Category:</strong> Celebrities</p>
-            <p><strong>Published:</strong> December 3, 2025</p>
-            <p>
-              <strong>Excerpt:</strong> After two years of construction, the
-              Grandview Theater reopened with a sold-out performance and new
-              modern amenities.
-            </p>
-            <p>
-              <strong>Tags:</strong> theater, restoration, local events,
-              heritage
-            </p>
-          </aside>
-
-          <a href="#" class="read-more">Read More →</a>
-          <hr class="article-divider" />
-        </article>
-
-        <article class="newspaper-article">
-          <span class="category-tag" data-category="geological"
-            >Geological</span
-          >
-          <img
-            src="images/body-images/space-image5.jpg"
-            alt="Space image 5"
-            class="article-img"
-          />
-          <h1 class="article-title">Researchers Map New Nebula Formation</h1>
-
-          <div class="newspaper-columns">
-            <p>
-              A beautifully chaotic star emerges in high detail thanks to the
-              many telescopes we've cluttered space with.
-            </p>
-          </div>
-
-          <aside class="meta-box">
-            <p><strong>Author:</strong> Daniel Okoro</p>
-            <p><strong>Category:</strong> Geological</p>
-            <p><strong>Published:</strong> April 9, 2024</p>
-            <p>
-              <strong>Excerpt:</strong> Marine researchers warn that
-              accelerating ocean warming may intensify storms and harm global
-              fisheries.
-            </p>
-            <p>
-              <strong>Tags:</strong> climate change, oceans, research,
-              environment
-            </p>
-          </aside>
-
-          <a href="#" class="read-more">Read More →</a>
-          <hr class="article-divider" />
-        </article>
-        <article class="newspaper-article">
-          <span class="category-tag" data-category="political">Political</span>
-          <img
-            src="images/body-images/space-image6.jpg"
-            alt="Space image 2"
-            class="article-img"
-          />
-          <h1 class="article-title">
-            New Exoplanet Shows Signs of Extreme Weather
-          </h1>
-
-          <div class="newspaper-columns">
-            <p>
-              Dubbed the future hope of our civilization, data reveals that
-              violent storms shaped Keplar 66Q's atmosphere daily.
-            </p>
-          </div>
-
-          <aside class="meta-box">
-            <p><strong>Author:</strong> Don Stone</p>
-            <p><strong>Category:</strong> Political</p>
-            <p><strong>Published:</strong> October 11, 2023</p>
-            <p>
-              <strong>Excerpt:</strong> Millions plan to travel to pluto to see
-              the edge of our solar system, mass robbery spikes
-            </p>
-            <p>
-              <strong>Tags:</strong> AI, emergency services, travel, public
-              concern
-            </p>
-          </aside>
-
-          <a href="#" class="read-more">Read More →</a>
-          <hr class="article-divider" />
-        </article>
+          <li>
+            <h3>Software Systems Development Program</h3>
+            <p class="meta">2023 – 2024</p>
+            <p>Completed an intensive program covering HTML5, MVC, React, CSS, JavaScript, Git, and modern frontend workflows.</p>
+          </li>
+        </ol>
       </section>
 
-      <!-- Clays section end -->
-
-      <section id="articles">
-        <h2>In other News</h2>
-        <article data-category="geological">
-          <span class="category-tag" data-category="geological"
-            >Geological</span
-          >
-          <img
-            src="images/body-images/crystal-cavern.png"
-            alt="Crystalline caverns"
-          />
-          <div class="featured-content">
-            <h3>Crystalline Caverns Discovered Beneath Mars’ Surface</h3>
-            <p class="excerpt">
-              Planetary geologists report vast crystal-lined chambers deep
-              beneath the Martian crust, suggesting long-term mineral growth
-              fueled by subsurface heat.
-            </p>
-            <p class="body">
-              Using high-resolution radar imaging and seismic data from
-              orbiters, researchers mapped the network of interconnected
-              caverns, some stretching several kilometers. These caverns contain
-              unique mineral formations, including rare crystalline structures
-              that could reveal Mars’ volcanic and hydrothermal history.
-              Scientists are now analyzing the potential for preserving water or
-              even microbial life in these protected underground pockets. The
-              discovery opens new possibilities for future Mars exploration and
-              habitability studies.
-            </p>
-            <p class="meta">By Dr. Lina Voss • Oct 14, 2109</p>
-            <div class="featured-tags">
-              <span>Mars</span>
-              <span>Crystals</span>
-              <span>Planetary Geology</span>
-            </div>
-            <a href="#">Read More</a>
-          </div>
-        </article>
-
-        <article data-category="geological">
-          <span class="category-tag" data-category="geological"
-            >Geological</span
-          >
-          <img
-            src="images/body-images/super-volcanoes.png"
-            alt="super volcanoes"
-          />
-          <div class="featured-content">
-            <h3>Active Super-Volcanoes Suspected on Venus</h3>
-            <p class="excerpt">
-              New atmospheric data hints that Venus may still be geologically
-              active, with massive lava flows reshaping its surface today.
-            </p>
-            <p class="body">
-              Observations from orbiting spacecraft have detected unusual sulfur
-              dioxide concentrations and surface temperature anomalies near
-              several caldera regions. These findings suggest ongoing volcanic
-              activity that could periodically release gas into the dense
-              Venusian atmosphere. The potential activity of these
-              super-volcanoes challenges previous assumptions that Venus is
-              geologically dead and offers new insight into planetary evolution
-              and volcanism under extreme greenhouse conditions. Researchers
-              plan to prioritize these areas for future high-resolution imaging
-              and atmospheric monitoring missions.
-            </p>
-            <p class="meta">By Arjun Pantera • Oct 10, 2109</p>
-            <div class="featured-tags">
-              <span>Venus</span>
-              <span>Volcanoes</span>
-              <span>Planetary Science</span>
-            </div>
-            <a href="#">Read More</a>
-          </div>
-        </article>
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Interested in working together or have a question? Reach out:</p>
+        <ul class="contact-links">
+          <li><a href="mailto:ccyre@my.bcit.ca">ccyre@my.bcit.ca</a></li>
+          <li><a href="https://github.com/Claycyre" target="_blank">GitHub</a></li>
+        </ul>
       </section>
     </main>
+
     <footer>
-      <p>&copy; <span id="current-year"></span> Daily Space News</p>
+      <p>&copy; 2026 Clayton Cyre</p>
     </footer>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
