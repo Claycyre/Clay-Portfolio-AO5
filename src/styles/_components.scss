@@ -79,6 +79,78 @@ section article img {
 }
 
 /* Skill groups */
-.skill-groups section {
-  margin-bottom: var(--space-md);
+.skill-groups > section:nth-child(2) ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-groups > section:nth-child(2) li {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  font-size: 0.85rem;
+}
+
+.skill-groups > section {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-groups > section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+.contact-buttons .btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+/* =========================
+   Buttons (Shared System)
+   ========================= */
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Filled button */
+.btn-primary {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* Outline button */
+.btn-outline {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
 }

@@ -7,12 +7,22 @@ body {
   background-color: var(--primary-color);
   margin: 0;
   cursor: none;
+
+  /* Modern typography tuning */
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.015em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
   background-image: url("../images/spaceBackground.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 
 /* Links */
 a {
@@ -46,8 +56,40 @@ section h2 {
   text-align: center;
 }
 
+.skill-groups > section {
+  flex: 1 1 280px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-groups > section:nth-child(1) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.skill-groups h3 {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+
 /* Responsive typography */
 @media (max-width: 500px) {
   h1 { font-size: 1.25rem; }
   h2 { font-size: 1.1rem; }
+}
+
+/* Responsive columns */
+@media (max-width: 768px) {
+  .skill-groups {
+    flex-direction: column;
+  }
 }

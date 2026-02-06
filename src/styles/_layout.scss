@@ -48,6 +48,15 @@ footer {
   animation: heroGlow 6s infinite ease-in-out;
 }
 
+.skill-groups {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+
 @keyframes heroGlow {
   0% { box-shadow: 0 0 15px rgba(255,255,255,0.1); }
   50% { box-shadow: 0 0 25px rgba(255,255,255,0.25); }
