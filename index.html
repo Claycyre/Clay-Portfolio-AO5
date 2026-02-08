@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Clayton Cyre</title>
   </head>
-
   <body>
-    <!-- HEADER / NAV -->
-    <header>
-      <nav aria-label="Primary">
-        <a href="#hero" class="site-logo">Clayton Cyre</a>
-        <ul class="nav-links">
+      <header> 
+        <div class="hero-name"> <h1 class="site-logo">Clayton Cyre</h1> 
+        </div>
+        <nav aria-label="Primary" class="hero-header"></nav>
+          <img src="/src/images/featured/clay.jpg" class="clay-image">
+        <ul class="nav-bullets">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -23,7 +23,6 @@
     </header>
 
     <main>
-      <!-- HERO SECTION -->
       <section id="hero" class="hero-article">
         <div class="hero-body">
           <h1 class="hero-title">Clayton Cyre</h1>
@@ -38,8 +37,6 @@
           </div>
         </div>
       </section>
-
-      <!-- ABOUT -->
       <section id="about">
         <h2>About</h2>
         <p>
@@ -49,8 +46,6 @@
           My background includes collaborative team projects and solo builds using modern tooling such as Tailwind, Sass, and JavaScript frameworks.
         </p>
       </section>
-
-      <!-- SKILLS -->
       <section id="skills">
         <h2>Skills</h2>
         <div class="skill-groups">
@@ -69,33 +64,41 @@
               <li>MVC</li>
             </ul>
           </section>
-
           <section>
-            <h3>Tooling</h3>
-            <ul>
-              <li>Git & GitHub</li>
-              <li>Vite</li>
-              <li>npm</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Design & UX</h3>
-            <ul>
-              <li>Responsive Design</li>
-              <li>Accessibility (WCAG)</li>
-              <li>Component Design</li>
+        <h3>Tooling</h3>
+          <ul>
+            <li>GitHub & GitHub Actions</li>
+            <li>Branching & Pull Requests</li>
+            <li>npm & package.json</li>
+            <li>Prettier</li>
+            <li>Chocolatey</li>
+            <li>Node Package Manager</li>
+            <li>VS Code Extensions</li>
+            <li>Postman</li>
+            <li>Swagger UI</li>
+            <li>MVC Patterns</li>
+            <li>API Testing Tools</li>
+            <li>SQL / SQLite</li>
+            <li>MongoDB</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+          </ul>
+      </section>
+        <section>
+          <h3>Design & UX</h3>
+          <ul>
+            <li>Responsive Design</li>
+            <li>Accessibility (WCAG)</li>
+            <li>Component Design</li>
             </ul>
           </section>
         </div>
       </section>
-
-      <!-- PROJECTS -->
       <section id="projects" class="featured-viewport">
         <h2>Projects</h2>
         <div class="featured-wrapper">
           <article class="featured-card">
-            <img src="images/body-images/space-image1.jpg" alt="Project Screenshot">
+            <img id="project1-img" alt="Project Screenshot">
             <div class="featured-content">
               <h3>Deckmaster</h3>
               <p>With the Deckmaster project, I build a web application that leverages the benefits of MVC
@@ -110,9 +113,8 @@
               </div>
             </div>
           </article>
-
           <article class="featured-card">
-            <img src="images/body-images/space-image2.jpg" alt="Project Screenshot">
+            <img id="project2-img" alt="Project Screenshot">
             <div class="featured-content">
               <h3>Javascript Game</h3>
               <p>Another project tasked us with creating an interactive game using JavaScript and HTML5. 
@@ -127,11 +129,8 @@
               </div>
             </div>
           </article>
-          <!-- Add more featured-card articles as needed -->
         </div>
       </section>
-
-      <!-- EXPERIENCE -->
       <section id="experience">
         <h2>Experience & Education</h2>
         <ol class="timeline">
@@ -148,8 +147,6 @@
           </li>
         </ol>
       </section>
-
-      <!-- CONTACT -->
       <section id="contact">
         <h2>Contact</h2>
         <p>Interested in working together or have a question? Reach out:</p>
@@ -159,7 +156,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <p>&copy; 2026 Clayton Cyre</p>
     </footer>
